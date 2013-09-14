@@ -3,9 +3,9 @@
 endfunction
 
 let s:source = {
-			\ 'name'            : 'git_lstree',
-			\ 'hooks'           : {},
-			\ }
+            \ 'name'  : 'git_lstree',
+            \ 'hooks' : {},
+            \ }
 
 function! s:source.hooks.on_init(args, context)
 	if !unite#sources#git_lstree#check()
